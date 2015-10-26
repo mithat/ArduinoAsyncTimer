@@ -1,16 +1,16 @@
 AsyncTimer
 ==========
 
-Copyright 2015 Mithat Konar.
+Copyright 2015 [Mithat Konar](http://mithatkonar.com).
 
-Licensed for use under the terms of the[GNU Lesser General Public License](http://www.gnu.org/licenses/lgpl-3.0.en.html).
+Licensed for use under the terms of the [GNU Lesser General Public License](http://www.gnu.org/licenses/lgpl-3.0.en.html).
 
 AsyncTimer is maintained at https://github.com/mithat/ArduinoAsyncTimer.
 
 Description
 -----------
 
-This library lets you create a pseudo-asynchronous timer with optional start 
+This library lets you create pseudo-asynchronous timers with optional start 
 and mandatory time-out actions. In other words, you can create a timer that 
 does something when you start it (or nothing if you prefer), then waits a 
 predetermined time before doing something else. While it's waiting, it doesn't 
