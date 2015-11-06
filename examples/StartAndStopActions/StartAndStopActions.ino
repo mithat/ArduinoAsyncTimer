@@ -1,6 +1,12 @@
 // Shows the use of an AsyncTimer with both time-out and start actions.
 // This example code is in the public domain.
 
+/* 
+ * Shows the use of an AsyncTimer with both time-out and start actions.
+ * 
+ * This example code is in the public domain.
+ */
+
 #include <AsyncTimer.h>
 
 const unsigned int LED_PIN = 13;

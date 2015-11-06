@@ -1,6 +1,9 @@
-// Shows the use of an AsyncTimer with only a time-out action (i.e., no start 
-// action.
-// This example code is in the public domain.
+/* 
+ * Shows the use of an AsyncTimer with only a time-out action (i.e., no start 
+ * action.
+ * 
+ * This example code is in the public domain.
+ */
 
 #include <AsyncTimer.h>
 

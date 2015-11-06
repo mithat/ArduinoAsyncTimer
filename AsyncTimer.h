@@ -1,8 +1,23 @@
-/* 
- * File:   AsyncTimer.h
- * Author: mithat
+/**
+ * @file
+ * @author    Mithat Konar (mithat ~at~ mithatkonar.com)
+ * @copyright Copyright (C) 2015 Mithat Konar
+ * @section   LICENSE
  *
- * Created on October 25, 2015, 9:35 PM
+ * This file is part of AsyncTimer.
+ *
+ * AsyncTimer is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * AsyncTimer is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this code. If not, see <http://www.gnu.org/licenses/>.
  */
 
 #ifndef ASYNCTIMER_H
@@ -23,8 +38,8 @@
 class AsyncTimer {
 public:
     typedef void (*AsyncTimerActionFuncPtr)();
-    AsyncTimer(unsigned long, AsyncTimerActionFuncPtr, AsyncTimerActionFuncPtr = NULL);
-    virtual ~AsyncTimer();
+    AsyncTimer(unsigned long = 0xffff, AsyncTimerActionFuncPtr = NULL, AsyncTimerActionFuncPtr = NULL);
+    void config(unsigned long, AsyncTimerActionFuncPtr, AsyncTimerActionFuncPtr = NULL);
     void start();
     void kill();
     boolean checkExpiration();
