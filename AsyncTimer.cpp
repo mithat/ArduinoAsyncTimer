@@ -24,10 +24,10 @@
 
 /**
  * Create an AsyncTimer.
- * 
+ *
  * @param length Number of milliseconds to wait before executing action.
  * @param actionEnd The action that will take place on timer expiration.
- * @param actionStart The action that will take on timer start (optional).
+ * @param actionStart The action that will take place on timer start (optional).
  */
 AsyncTimer::AsyncTimer(unsigned long length, AsyncTimerActionFuncPtr actionEnd, AsyncTimerActionFuncPtr actionStart)
 {
@@ -36,7 +36,7 @@ AsyncTimer::AsyncTimer(unsigned long length, AsyncTimerActionFuncPtr actionEnd, 
 
 /**
  * Initialize an AsyncTimer.
- * 
+ *
  * @param length Number of milliseconds to wait before executing action.
  * @param actionEnd The action that will take place on timer expiration.
  * @param actionStart The action that will take on timer start (optional).
@@ -72,10 +72,10 @@ void AsyncTimer::kill()
 
 /**
  * Execute action if timer has expired.
- * 
- * The timer is considered expired if it has been running for at least length 
+ *
+ * The timer is considered expired if it has been running for at least length
  * milliseconds.
- * 
+ *
  * @return true iff the timer is no longer running (suggesting expiration).
  */
 bool AsyncTimer::checkExpiration()

@@ -28,12 +28,15 @@
 /**
  * Pseudo-asynchronously execute a timer with optional start and mandatory
  * time-out actions.
- * 
- * The time-out and start actions are specified as function pointers with no 
+ *
+ * The time-out and start actions are specified as function pointers with no
  * parameters and no return value. After instantiation, execute the the start()
- * method when you want to start counting. The main loop() needs to be 
+ * method when you want to start counting. The main loop() needs to be
  * configured to poll the checkExpiration() method every iteration.
- * 
+ *
+ * The timer is a one-shot. To make it a reapeating timer, call the timer's
+ * start() method inside the actionEnd handler.
+ *
  */
 class AsyncTimer {
 public:
