@@ -34,7 +34,7 @@
  * method when you want to start counting. The main loop() needs to be
  * configured to poll the checkExpiration() method every iteration.
  *
- * The timer is a one-shot. To make it a reapeating timer, call the timer's
+ * The timer is a one-shot. To make it a repeating timer, call the timer's
  * start() method inside the actionEnd handler.
  *
  */
