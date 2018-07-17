@@ -4,15 +4,15 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-AsyncTimer KEYWORD1
+AsyncTimer	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-start   KEYWORD2
-kill    KEYWORD2
-checkExpiration   KEYWORD2
+start	KEYWORD2
+kill	KEYWORD2
+checkExpiration	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
