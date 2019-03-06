@@ -45,7 +45,7 @@ public:
     void config(unsigned long, AsyncTimerActionFuncPtr, AsyncTimerActionFuncPtr = NULL);
     void start();
     void kill();
-    boolean checkExpiration();
+    bool checkExpiration();
 
 protected:
     unsigned long length;       // Number of milliseconds to wait before action.

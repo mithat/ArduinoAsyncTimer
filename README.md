@@ -14,7 +14,7 @@ This library lets you create pseudo-asynchronous timers with optional start
 and mandatory time-out actions. In other words, you can create a timer that
 does something (or nothing) when you start it, then waits a predetermined
 time before doing something else. While it's waiting, it doesn't lock up
-your Arudino the way the `delay()` function does -- it just schedules the
+your Arduino the way the `delay()` function does -- it just schedules the
 time-out action to take place some time in the future.
 
 The time-out and start actions are specified as function pointers with no
